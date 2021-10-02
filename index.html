@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>COVID-19 STATUS </title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/img/logo.png" alt="logo">
+            <p>COVID-19<br/>STATUS</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SOBRE</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="stats">
+            <div class="latest-report">
+                <div class="country">
+                    <div class="name">Carregando...</div>
+                    <div class="change-country">Alterar Pais</div>
+                    <div class="search-country hide">
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Pesquisar Pais...">
+                            <img class="close" src="./assets/img/close.svg" alt="close">
+                        </div>
+                        <div class="country-list">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="total-cases">
+                    <div class="title">Casos Totais</div>
+                    <div class="value">0</div>
+                    <div class="new-value">+0</div>
+                </div>
+                <div class="recovered">
+                    <div class="title">Recuperados</div>
+                    <div class="value">0</div>
+                    <div class="new-value">+0</div>
+                </div>
+                <div class="deaths">
+                    <div class="title">Mortes</div>
+                    <div class="value">0</div>
+                    <div class="new-value">+0</div>
+                </div>
+            </div>
+            <div class="chart">
+                <canvas id="axes_line_chart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                <p>Copyright  © 2021 DevJPVR</p>
+            </div>
+        </div>
+    </footer>
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+    integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+    crossorigin="anonymous"
+  ></script>
+
+    <!-- <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script> -->
+    <script src="./assets/js/countries.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+</body>
+</html>
